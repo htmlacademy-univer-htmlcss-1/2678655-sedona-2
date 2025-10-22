@@ -88,7 +88,7 @@ body {
 .welcome{
   text-align: center;
 }
-.welcome-bg{
+.welcome-theme-custom{
   background-color: #9599b6;
   background-image: url('../images/backgrounds/welcome-sedona.jpg');
   background-repeat: no-repeat;
@@ -153,3 +153,18 @@ body {
   text-decoration: none;
   font-style: normal;
 }
+
+/* 1. При уменьшении экрана, фон у секции welcome(который запасной цветом задал),
+начинает вылезать из за картинки, не понимаю как исправить, пробовал через bg-position - не помогло. */
+
+/* 2. Класс .search-button и form-button имеют одни стили.
+Не очень понимаю как оптимизировать, если делать просто общий класс,
+то как будто много классов будет на одну кнопку(там уже 3 - 4 выходит), */
+
+/* Такой еще вариант есть (Как будто бы неплохо)): */
+/* .search-button,
+  .form-button{
+    font-size: 20px;
+    line-height: 36px;
+  }
+*/
