@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Общее */
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.h1{
+  font-weight: 700;
+  font-size: 60px;
+  line-height:78px;
+}
+.h2{
+  font-weight: 700;
+  font-size: 30px;
+  line-height:36px;
+  text-transform: uppercase;
+}
+.h3{
+  font-weight: 700;
+  font-size: 24px;
+  line-height:28px;
+  text-transform: uppercase;
+}
+.h4{
+  font-weight: 700;
+  font-size: 20px;
+  line-height:24px;
+}
+.desc{
+  font-size: 18px;
+  line-height: 21px;
+}
+.button{
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: #756157;
+  border: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.button-add{
+  background-color: #82B3D3;
+}
+
+
+/* Header */
+.page-header{
+  background-color: white;
+}
+.navigation-link {
+  color: #000000;
+  text-decoration: none;
+}
+.navigation-btn{
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+/* Main */
+.main-index{
+  background-color: white;
+}
+
+/* Секция Welcome */
+.welcome{
+  text-align: center;
+}
+.welcome-bg{
+  background-color: #9599b6;
+  background-image: url('../images/backgrounds/welcome-sedona.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* Секция Advantages */
+.advantages{
+  text-align: center;
+}
+.box-base{
+  color: #000000;
+  background-color: rgba(131, 179, 211 ,0.12);
+}
+.box-second{
+  color: #000000;
+  background-color: rgba(131, 179, 211 ,0.2);
+}
+.box-main{
+  color: white;
+  background-color: #82B3D3;
+}
+
+/* Секция Benefits */
+.benefits{
+  text-align: center;
+}
+
+
+/* Search */
+.search{
+  text-align: center;
+}
+.search-button{
+  font-size: 20px;
+  line-height: 36px;
+}
+/* Subscription */
+.subscription{
+  color:white;
+  text-align: center;
+}
+.subscription-theme-custom{
+  background-color: #2f6d96;
+  background-image: url('../images/backgrounds/subscribe.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.form-button{
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* Footer */
+.page-footer{
+  background-color: white;
+}
+.footer-tel a{
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  font-style: normal;
+}
