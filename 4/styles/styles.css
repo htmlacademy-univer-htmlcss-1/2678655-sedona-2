@@ -61,37 +61,68 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
-.button-text-1{
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-.button-text-2{
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-.button-text-3{
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
 .button{
   font-family: inherit;
-  background-color: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   color: #FFFFFF;
+  background-color: #756157;
   border: none;
+  outline: none;
 }
-.button-bg-active{
+.button-big{
+  font-size: 20px;
+  line-height: 36px;
+}
+.button-bg-base,
+.button-bg-base:active{
+  background-color: #756157;
+}
+.button-bg-base:hover,
+.button-bg-base:focus{
+  background-color: #615048;
+}
+.button-bg-base:disabled,
+.button-bg-active:disabled,
+.button-bg-add:disabled{
+  background-color: #E5E5E5;
+}
+.button-bg-active,
+.button-bg-active:active{
   background-color: #7DB54F;
+}
+.button-bg-active:hover,
+.button-bg-active:focus{
+  background-color: #6C9E42;
 }
 .button-bg-transparent{
   background-color: transparent;
 }
-.bg-base{
-  background-color: #ffffff;
+.button-bg-transparent:hover{
+  background-color: #756157;
+}
+.button-bg-transparent:focus{
+  background-color: transparent;
+  border: 2px solid #83B3D3;
+
+}
+.button-bg-transparent:active{
+  background-color: transparent;
+  border: none;
+}
+.button-bg-transparent:disabled{
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.1);
+}
+.button-bg-add,
+.button-bg-add:active{
+  background-color: #83B3D3;
+}
+.button-bg-add:hover,
+.button-bg-add:focus{
+  background-color: #68A2CA;
 }
 .bg-add-1{
   background-color: rgba(130, 179, 211, 0.12);
@@ -99,13 +130,17 @@ body {
 .bg-add-2{
   background-color: rgba(130, 179, 211, 0.2);
 }
+.bg-base{
+  background-color: #ffffff;
+}
 .position-center{
   text-align: center;
 }
 .navigation-link {
   color: #000000;
+  text-decoration: none;
 }
-.welcome-theme-custom{
+.welcome{
   background-color: #9599b6;
   background-image: url('../images/backgrounds/welcome-sedona.jpg');
   background-repeat: no-repeat;
@@ -128,19 +163,21 @@ body {
 .footer-tel-link{
   color: #000000;
   font-style: normal;
+  text-decoration: none;
 }
+
 .catalog-intro{
   color: white;
-}
-.catalog-intro-bg{
   background-color: #2f6d96;
   background-image: url('../images/backgrounds/filters.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+
 .breadcrumbs-link{
   font-size: 16px;
   line-height: 21px;
+  text-decoration: none;
   color: white;
 }
 .filter-label{
@@ -154,23 +191,30 @@ body {
 .catalog-cards-title{
   color: #000000;
 }
+.card-link{
+  text-decoration: none;
+}
 .card-link .card-title{
   color: #000000;
   text-transform: none;
 }
+.card .button-bg-base{
+  text-decoration: none;
+}
 .cart-rating{
   display: inline-block;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   background-color: #F2F2F2;
 }
-.pagination-current{
+.pagination-item a{
+  color: white;
+  text-decoration: none;
+
+}
+.pagination-item .pagination-current{
   color: #000000;
   background-color: #F2F2F2;
 }
-
-/* У меня несколько вопросов возникло */
-/* 1. Можно ли таким образом задавать вопросы?) */
-/* 2. Создал много стилей из стайлгайда, но хотел бы наверное еще больше(допустим еще стили bg),
-  цвет #000000 очень часто встречается, нужно ли делать доп класс для него?
-  Также класс position-center, не хотел везде писать его поэтому решил отдельный сделать, можно ли так? */
- /* 3. Подчеркивания у тега а, потом убирать же отдельно будем или самому в классах убирать? */
