@@ -40,13 +40,13 @@
           </a>
         </li>
         <li class="navigation-item">
-          <button class="button button-text-3" type="button">Хочу сюда!</button>
+          <button class="button button-bg-base" type="button">Хочу сюда!</button>
         </li>
       </ul>
   </header>
   <main class="main-index bg-base">
     <section class="catalog">
-      <header class="catalog-intro catalog-intro-bg">
+      <header class="catalog-intro">
         <h1 class="catalog-title h1">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -98,12 +98,12 @@
             <input type="number" class="input-value desc-4" name="minValue" id="minValue" value="0" required>
             <input type="number" class="input-value desc-4" name="maxValue" id="maxValue" value="9000" required>
           </fieldset>
-          <button class="button button-text-2 box-main filter-button-apply" type="submit">Применить</button>
-          <button class="button button-text-2 button-bg-transparent filter-button-reset" type="reset">Сбросить</button>
+          <button class="button button-bg-add" type="submit">Применить</button>
+          <button class="button button-bg-transparent" type="reset">Сбросить</button>
         </form>
       </header>
       <section class="catalog-cards">
-        <h3 class="h2 catalog-cards-title">Найдено гостиниц : <span class="catalog-cards-value">4</span></h3>
+        <h3 class="catalog-cards-title h2">Найдено гостиниц : <span class="catalog-cards-value">4</span></h3>
         <select class="select-control" name="sort" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
         </select>
@@ -132,9 +132,9 @@
             </a>
             <p class="card-category desc-3">Гостиница</p>
             <p class="card-price desc-3">От <span class="card-value">4000</span>₽</p>
-            <a class="button button-text-2 card-button-details" href="#">Подробнее</a>
-            <button class="button button-text-2 card-button-fav box-main" type="button">В избранное</button>
-            <div class="button-text-2 cart-rating">Рейтинг: 8.5</div>
+            <a class="button button-bg-base" href="#">Подробнее</a>
+            <button class="button button-bg-add" type="button">В избранное</button>
+            <div class="cart-rating">Рейтинг: 8.5</div>
           </li>
           <li class="card">
             <a class="card-link" href="#">
@@ -143,9 +143,9 @@
             </a>
             <p class="card-category desc-3">Гостиница</p>
             <p class="card-price desc-3">От <span class="card-value">5000</span>₽</p>
-            <a class="button button-text-2 card-button-details" href="#">Подробнее</a>
-            <button class="button button-text-2 button-text-2 card-button-fav button-bg-active" type="button">В избранное</button>
-            <div class="button-text-2 cart-rating">Рейтинг: 9.2</div>
+            <a class="button button-bg-base" href="#">Подробнее</a>
+            <button class="button button-bg-active" type="button">В избранное</button>
+            <div class="cart-rating">Рейтинг: 9.2</div>
           </li>
           <li class="card">
             <a class="card-link" href="#">
@@ -154,9 +154,9 @@
             </a>
             <p class="card-category desc-3">Гостиница</p>
             <p class="card-price desc-3">От <span class="card-cost">2500</span>₽</p>
-            <a class="button button-text-2 card-button-details" href="#">Подробнее</a>
-            <button class="button button-text-2 card-button-fav box-main" type="button">В избранное</button>
-            <div class="button-text-2 cart-rating">Рейтинг: 6.9</div>
+            <a class="button button-bg-base" href="#">Подробнее</a>
+            <button class="button button-bg-add" type="button">В избранное</button>
+            <div class="cart-rating">Рейтинг: 6.9</div>
           </li>
           <li class="card">
             <a class="card-link" href="#">
@@ -165,26 +165,26 @@
             </a>
             <p class="card-category desc-3">Гостиница</p>
             <p class="card-price desc-3">От <span class="card-cost">1500</span>₽</p>
-            <a class="button button-text-2 card-button-details" href="#">Подробнее</a>
-            <button class="button button-text-2 card-button-fav box-main" type="button">В избранное</button>
-            <div class="button-text-2 cart-rating">Рейтинг: 5.0</div>
+            <a class="button button-bg-base" href="#">Подробнее</a>
+            <button class="button button-bg-add" type="button">В избранное</button>
+            <div class="cart-rating">Рейтинг: 5.0</div>
           </li>
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="pagination-link box-main pagination-current" href="#">1</a>
+            <a class="pagination-link button-bg-add pagination-current" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link box-main" href="#">2</a>
+            <a class="pagination-link button-bg-add " href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link box-main" href="#">3</a>
+            <a class="pagination-link button-bg-add" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link box-main" href="#">4</a>
+            <a class="pagination-link button-bg-add" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link box-main" href="#">5</a>
+            <a class="pagination-link button-bg-add" href="#">5</a>
           </li>
           <li class="pagination-item">
             <a  href="#">...</a>
@@ -200,7 +200,7 @@
       <p class="subscription-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="form-email" type="email" name="email" placeholder="Ваш e-mail">
-        <button class="button form-button button-text-1 box-main" type="submit">Подписаться</button>
+        <button class="button button-big box-main" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
