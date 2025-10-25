@@ -12,7 +12,6 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-
 body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -22,7 +21,6 @@ body {
   color: #333333;
   background-color: #F2F2F2;
 }
-
 .h1{
   font-weight: 700;
   font-size: 60px;
@@ -133,25 +131,36 @@ body {
 .bg-base{
   background-color: #ffffff;
 }
-.position-center{
-  text-align: center;
+.navigation{
+  display: flex;
+  width: 600px;
 }
 .navigation-link {
   color: #000000;
   text-decoration: none;
 }
 .welcome{
+  text-align: center;
   background-color: #9599b6;
   background-image: url('../images/backgrounds/welcome-sedona.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+.advantages{
+  text-align: center;
+}
 .advantages-item{
   color: #000000;
+}
+.benefits{
+  text-align: center;
 }
 .box-main{
   color: white;
   background-color: #82B3D3;
+}
+.subscription{
+  text-align: center;
 }
 .subscription-theme-custom{
   color:white;
@@ -159,6 +168,9 @@ body {
   background-image: url('../images/backgrounds/subscribe.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+.search{
+  text-align: center;
 }
 .footer-tel-link{
   color: #000000;
