@@ -177,6 +177,13 @@ body {
   font-style: normal;
   text-decoration: none;
 }
+.footer-tel-link:hover,
+.footer-tel-link:focus{
+  color:#756157;
+}
+.footer-tel-link:active{
+  color:rgba(117, 97, 87, 0.3);
+}
 
 .catalog-intro{
   color: white;
