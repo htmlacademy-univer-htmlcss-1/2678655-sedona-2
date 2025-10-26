@@ -99,7 +99,7 @@ body {
   background-color: transparent;
 }
 .button-bg-transparent:hover{
-  background-color: #756157;
+  color: rgba(255, 255, 255, 0.6);
 }
 .button-bg-transparent:focus{
   background-color: transparent;
@@ -109,6 +109,7 @@ body {
 .button-bg-transparent:active{
   background-color: transparent;
   border: none;
+  color:rgba(255, 255, 255, 0.3);
 }
 .button-bg-transparent:disabled{
   background-color: transparent;
