@@ -107,8 +107,8 @@
           </form>
         </header>
         <section class="catalog-cards">
-          <div class="catalog-cards-intro">
-            <h3 class="catalog-cards-title h2">Найдено гостиниц : <span class="catalog-cards-value">4</span></h3>
+          <header class="catalog-cards-intro">
+            <h2 class="catalog-cards-title h2">Найдено гостиниц : <span class="catalog-cards-value">4</span></h2>
             <div class="catalog-cards-filters">
               <select class="select-control" name="sort" aria-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>
@@ -131,12 +131,12 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </header>
           <ul class="cards-list">
             <li class="card">
               <a class="card-link" href="#">
                 <img class="card-image" src="images/hotel/Amara-Resort-&-Spa.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa" />
-                <h4 class="card-title h3">Amara Resort & Spa</h4>
+                <h3 class="card-title h3">Amara Resort & Spa</h3>
               </a>
               <p class="card-category desc-3">Гостиница</p>
               <p class="card-price desc-3">От <span class="card-value">4000</span>₽</p>
@@ -147,7 +147,7 @@
             <li class="card">
               <a class="card-link" href="#">
                 <img class="card-image" src="images/hotel/Villas-at-Poco-Diablo.jpg" width="300" height="212" alt="Гостиница Villas at Poco Diablo" />
-                <h4 class="card-title h3">Villas at Poco Diablo</h4>
+                <h3 class="card-title h3">Villas at Poco Diablo</h3>
               </a>
               <p class="card-category desc-3">Гостиница</p>
               <p class="card-price desc-3">От <span class="card-value">5000</span>₽</p>
@@ -158,7 +158,7 @@
             <li class="card">
               <a class="card-link" href="#">
                 <img class="card-image" src="images/hotel/Desert-Quail-Inn.jpg" width="300" height="212" alt="Гостиница Desert Quail Inn" />
-                <h4 class="card-title h3">Desert Quail Inn</h4>
+                <h3 class="card-title h3">Desert Quail Inn</h3>
               </a>
               <p class="card-category desc-3">Гостиница</p>
               <p class="card-price desc-3">От <span class="card-cost">2500</span>₽</p>
@@ -169,7 +169,7 @@
             <li class="card">
               <a class="card-link" href="#">
                 <img class="card-image" src="images/hotel/GreenTree-Inn.jpg" width="300" height="212" alt="Гостиница GreenTree Inn" />
-                <h4 class="card-title h3">GreenTree Inn</h4>
+                <h3 class="card-title h3">GreenTree Inn</h3>
               </a>
               <p class="card-category desc-3">Гостиница</p>
               <p class="card-price desc-3">От <span class="card-cost">1500</span>₽</p>
@@ -202,43 +202,45 @@
             </li>
           </ul>
         </section>
-      </section>
-      <section class="subscription">
-        <h2 class="h2 subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="form-email" type="email" name="email" placeholder="Ваш e-mail">
-          <button class="button button-big button-bg-add" type="submit">Подписаться</button>
-        </form>
+        <section class="subscription">
+          <h2 class="subscription-title h2">Подпишитесь на рассылку</h2>
+          <p class="subscription-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="form-email" type="email" name="email" placeholder="Ваш e-mail">
+            <button class="button button-big button-bg-add" type="submit">Подписаться</button>
+          </form>
+        </section>
       </section>
     </main>
     <footer class="page-footer bg-base">
-      <section class="footer-address">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="#">
-              <span class="visually-hidden">Вконтакте</span>
+        <section class="footer-address">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <div class="footer-address-content">
+            <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <span class="visually-hidden">Телеграмм</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+            </ul>
+            <address class="footer-tel">
+              <a class="footer-tel-link desc-1" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </address>
+            <a class="footer-link-create" href="https://htmlacademy.ru/">
+              <img src="images/icons/htmlAcademy.svg" width="115" height="33" alt="Создано на html-academy">
             </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="#">
-              <span class="visually-hidden">Телеграмм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="#">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-        <address class="footer-tel">
-          <a class="footer-tel-link desc-1" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-        <a class="footer-link-create" href="https://htmlacademy.ru/">
-          <img src="images/icons/htmlAcademy.svg" width="115" height="33" alt="Создано на html-academy">
-        </a>
-      </section>
+          </div>
+        </section>
     </footer>
   </div>
 </body>
