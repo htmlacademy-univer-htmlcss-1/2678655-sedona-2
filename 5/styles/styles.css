@@ -22,7 +22,7 @@ html{
 }
 body {
   margin: 0;
-  height: 100%;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -78,6 +78,7 @@ body {
   background-color: #756157;
   border: none;
   outline: none;
+  padding:0;
 }
 .button-big{
   font-size: 20px;
@@ -167,7 +168,7 @@ body {
   padding: 0;
 }
 .navigation-user{
-  max-width: 268px;
+  width: 268px;
 }
 .main-index{
   flex-grow: 1;
@@ -286,13 +287,19 @@ body {
 }
 .cards-list{
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 .catalog-cards-title{
   color: #000000;
+}
+.card{
+  padding: 20px;
+  margin-right: 20px;
+}
+.card:nth-child(3n){
+  margin-right: 0;
 }
 .card-link{
   text-decoration: none;
