@@ -332,6 +332,9 @@ body {
   text-decoration: none;
 
 }
+.pagination-item .options{
+  color: #000000;
+}
 .pagination-item .pagination-current{
   color: #000000;
   background-color: #F2F2F2;
