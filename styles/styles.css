@@ -302,6 +302,7 @@ body {
   padding: 0;
 }
 .card{
+  width: 340px;
   padding: 20px;
   box-sizing: border-box;
 }
