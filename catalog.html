@@ -10,7 +10,7 @@
   <div class="page-container">
     <header class="page-header bg-base">
       <nav class="navigation">
-        <a class="page-header-logo">
+        <a class="page-header-logo" href="index.html">
           <img src="images/icons/logo.svg" width="138" height="70" alt="Добро пожаловать в Седону">
         </a>
         <ul class="navigation-list">
@@ -113,7 +113,7 @@
           <header class="catalog-cards-intro">
             <h2 class="catalog-cards-title h2">Найдено гостиниц : <span class="catalog-cards-value">4</span></h2>
             <div class="catalog-cards-filters">
-              <select class="select-control" name="sort" aria-label="Сортировка">
+              <select class="select-control desc-3" name="sort" aria-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>
               </select>
               <ul class="housing-display-list">
@@ -145,9 +145,19 @@
                 <p class="card-category desc-3">Гостиница</p>
                 <p class="card-price desc-3">от <span class="card-value">4000</span>₽</p>
               </div>
-              <a class="button button-bg-base" href="#">Подробнее</a>
-              <button class="button button-bg-add" type="button">В избранное</button>
-              <div class="cart-rating">Рейтинг: 8.5</div>
+              <div class="card-buttons">
+                <a class="button button-bg-base" href="#">Подробнее</a>
+                <button class="button button-bg-add" type="button">В избранное</button>
+              </div>
+              <div class="card-rating">
+                <ul class="rating-stars-list">
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                </ul>
+                <p class="rating-value">Рейтинг: 8.5</p>
+              </div>
             </li>
             <li class="card">
               <a class="card-link" href="#">
@@ -156,11 +166,21 @@
               </a>
               <div class="card-info">
                 <p class="card-category desc-3">Гостиница</p>
-                <p class="card-price desc-3">От <span class="card-value">5000</span>₽</p>
+                <p class="card-price desc-3">от <span class="card-value">5000</span>₽</p>
               </div>
-              <a class="button button-bg-base" href="#">Подробнее</a>
-              <button class="button button-bg-active" type="button">В избранное</button>
-              <div class="cart-rating">Рейтинг: 9.2</div>
+              <div class="card-buttons">
+                <a class="button button-bg-base" href="#">Подробнее</a>
+                <button class="button button-bg-active" type="button">В избранное</button>
+              </div>
+              <div class="card-rating">
+                <ul class="rating-stars-list">
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                </ul>
+                <p class="rating-value">Рейтинг: 9.2</p>
+              </div>
             </li>
             <li class="card">
               <a class="card-link" href="#">
@@ -171,9 +191,18 @@
                 <p class="card-category desc-3">Гостиница</p>
                 <p class="card-price desc-3">от <span class="card-cost">2500</span>₽</p>
               </div>
-              <a class="button button-bg-base" href="#">Подробнее</a>
-              <button class="button button-bg-add" type="button">В избранное</button>
-              <div class="cart-rating">Рейтинг: 6.9</div>
+              <div class="card-buttons">
+                <a class="button button-bg-base" href="#">Подробнее</a>
+                <button class="button button-bg-add" type="button">В избранное</button>
+              </div>
+              <div class="card-rating">
+                <ul class="rating-stars-list">
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                  <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                </ul>
+                <p class="rating-value">Рейтинг: 6.9</p>
+              </div>
             </li>
             <li class="card">
               <a class="card-link" href="#">
@@ -184,9 +213,17 @@
                 <p class="card-category desc-3">Гостиница</p>
                 <p class="card-price desc-3">от <span class="card-cost">1500</span>₽</p>
               </div>
-              <a class="button button-bg-base" href="#">Подробнее</a>
-              <button class="button button-bg-add" type="button">В избранное</button>
-              <div class="cart-rating">Рейтинг: 5.0</div>
+              <div class="card-buttons">
+                <a class="button button-bg-base" href="#">Подробнее</a>
+                <button class="button button-bg-add" type="button">В избранное</button>
+              </div>
+              <div class="card-rating">
+                  <ul class="rating-stars-list">
+                    <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                    <li class="rating-stars-item"><img src="/images/icons/star.svg" alt="Звезда"></li>
+                  </ul>
+                  <p class="rating-value">Рейтинг: 5.0</p>
+              </div>
             </li>
           </ul>
           <ul class="pagination-list">
@@ -194,7 +231,7 @@
               <a class="pagination-link button-bg-add pagination-current" href="#">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link button-bg-add " href="#">2</a>
+              <a class="pagination-link button-bg-add" href="#">2</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link button-bg-add" href="#">3</a>
@@ -223,34 +260,34 @@
       </section>
     </main>
     <footer class="page-footer bg-base">
-        <section class="footer-address">
-          <h2 class="visually-hidden">Контактная информация</h2>
-          <div class="footer-address-content">
-            <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a class="footer-social-link" href="#">
-                  <span class="visually-hidden">Вконтакте</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="footer-social-link" href="#">
-                  <span class="visually-hidden">Телеграмм</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="footer-social-link" href="#">
-                  <span class="visually-hidden">Ютуб</span>
-                </a>
-              </li>
-            </ul>
-            <address class="footer-tel">
-              <a class="footer-tel-link desc-1" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            </address>
-            <a class="footer-link-create" href="https://htmlacademy.ru/">
-              <img src="images/icons/htmlAcademy.svg" width="115" height="33" alt="Создано на html-academy">
-            </a>
-          </div>
-        </section>
+      <section class="footer-address">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <div class="footer-address-content">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <span class="visually-hidden">Телеграмм</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+          <address class="footer-tel">
+            <a class="footer-tel-link desc-1" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+          <a class="footer-link-create" href="https://htmlacademy.ru/">
+            <img src="images/icons/htmlAcademy.svg" width="115" height="33" alt="Создано на html-academy">
+          </a>
+        </div>
+      </section>
     </footer>
   </div>
 </body>
