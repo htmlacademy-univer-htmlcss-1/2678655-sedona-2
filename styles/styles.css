@@ -275,9 +275,10 @@ body {
 }
 
 .navigation-user {
+  margin-top: 15px;
   width: 315px;
   display: flex;
-  margin-top: 15px;
+  justify-content: flex-end;
 }
 
 .navigation-user-item button {
