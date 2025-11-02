@@ -598,7 +598,7 @@ body {
 
 .select-control {
   width: 292px;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   font-family: inherit;
   color: var(--color-text-primary);
   appearance: none;
@@ -641,9 +641,9 @@ body {
 }
 
 .cards-list {
+  margin: 0;
   width: 100%;
   max-width: 1060px;
-  margin: 0;
   padding: 0 0 40px;
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -667,7 +667,6 @@ body {
   box-sizing: border-box;
   border: 1px solid var(--color-border-primary);
   border-radius: 8px;
-  background-color: var(--color-base-white);
 }
 
 .card-link {
@@ -705,6 +704,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  height: 36px;
 }
 
 .card-buttons .button{
@@ -715,12 +715,15 @@ body {
   font-size: 16px;
   line-height: 20px;
   max-width: 140px;
+  height: 36px;
+  box-sizing: border-box;
 }
 
 .card-rating {
   grid-area: rating;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-self: center;
   gap: 20px;
 }
 .rating-stars-list{
@@ -739,6 +742,8 @@ body {
   text-transform: uppercase;
   background-color: var(--color-bg-primary);
   border-radius: 4px;
+  height: 37px;
+  box-sizing: border-box;
 }
 
 .pagination-list {
