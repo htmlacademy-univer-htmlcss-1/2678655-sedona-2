@@ -135,7 +135,7 @@ body {
   cursor: pointer;
 }
 
-.button-big {
+.button.button-big {
   font-size: 20px;
   line-height: 36px;
 }
@@ -598,7 +598,7 @@ body {
 
 .select-control {
   width: 292px;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   font-family: inherit;
   color: var(--color-text-primary);
   appearance: none;
@@ -641,9 +641,9 @@ body {
 }
 
 .cards-list {
+  margin: 0;
   width: 100%;
   max-width: 1060px;
-  margin: 0;
   padding: 0 0 40px;
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -657,57 +657,43 @@ body {
   padding: 19px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: 212px minmax(min-content, auto) 21px 36px 37px;
   grid-template-areas:
-    "link link"
-    "info info"
-    "buttons buttons"
-    "rating rating";
-  row-gap: 16px;
+    "image image"
+    "title title"
+    "category price"
+    "button-details button-favorite"
+    "stars rating";
+  gap: 16px 20px;
   box-sizing: border-box;
   border: 1px solid var(--color-border-primary);
   border-radius: 8px;
-  background-color: var(--color-base-white);
-}
-
-.card-link {
-  grid-area: link;
-  text-decoration: none;
 }
 
 .card-image {
-  margin-bottom: 16px;
+  grid-area: image;
   display: block;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-title {
-  margin: 0;
+  grid-area: title;
   color: var(--color-base-black);
   text-transform: none;
 }
 
-.card-info {
-  grid-area: info;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  align-items: center;
+.card-category {
+  grid-area: category;
   color: var(--color-text-primary);
+  align-self: center;
 }
 
 .card-price {
+  grid-area: price;
   text-align: right;
-}
 
-.card-buttons {
-  grid-area: buttons;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
 }
-
-.card-buttons .button{
+.card .button {
   padding: 8px 20px;
   border-radius: 4px;
   text-align: center;
@@ -716,21 +702,27 @@ body {
   line-height: 20px;
   max-width: 140px;
 }
-
-.card-rating {
-  grid-area: rating;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.card .button-bg-base {
+  grid-area: button-details;
 }
-.rating-stars-list{
+.card .button-bg-add{
+  grid-area: button-favorite;
+}
+
+
+.rating-stars-list {
+  grid-area: stars;
   padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
   column-gap: 6px;
   list-style: none;
+  align-self: center;
 }
+
 .rating-value {
+  grid-area: rating;
   margin: 0;
   max-width: 140px;
   padding: 9px 22px 8px 23px;
@@ -739,6 +731,8 @@ body {
   text-transform: uppercase;
   background-color: var(--color-bg-primary);
   border-radius: 4px;
+  box-sizing: border-box;
+  justify-self: end;
 }
 
 .pagination-list {
