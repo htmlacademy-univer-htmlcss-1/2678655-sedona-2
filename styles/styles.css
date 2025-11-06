@@ -299,11 +299,11 @@ button.button-bg-transparent:active {
 }
 
 .navigation-search-link{
-  background-image: url('/images/icons/search.svg');
+  background-image: url('images/icons/search.svg');
   background-size: 19px 19px;
 }
 .navigation-fav-link{
-  background-image: url('/images/icons/fav.svg');
+  background-image: url('images/icons/fav.svg');
   background-size: 19px 17px;
   position: relative;
 }
@@ -663,7 +663,7 @@ button.button-bg-transparent:active {
 }
 .breadcrumbs-item::after {
   position: absolute;
-  background-image: url('/images/icons/breadcrumbs.svg');
+  background-image: url('images/icons/breadcrumbs.svg');
   background-repeat: no-repeat;
   transform: rotate(0deg);
   top: 11px;
@@ -676,7 +676,7 @@ button.button-bg-transparent:active {
   content: none;
 }
 .breadcrumbs-item:first-child .breadcrumbs-link{
-  background-image: url('/images/icons/home.svg');
+  background-image: url('images/icons/home.svg');
   background-repeat: no-repeat;
   background-position: center;
   width: 15px;
@@ -799,13 +799,13 @@ button.button-bg-transparent:active {
   border-color: var( --color-base-black);
 }
 .housing-display-card{
-  background-image: url('/images/icons/tile.svg');
+  background-image: url('images/icons/tile.svg');
 }
 .housing-display-slide{
-  background-image: url('/images/icons/slidesShow.svg');
+  background-image: url('images/icons/slidesShow.svg');
 }
 .housing-display-roster{
-  background-image: url('/images/icons/list.svg');
+  background-image: url('images/icons/list.svg');
 }
 
 .filter-label {
