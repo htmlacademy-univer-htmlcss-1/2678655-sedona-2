@@ -1164,8 +1164,8 @@ button.button-bg-transparent:active {
   width: 256px;
   min-height: 143px;
   position: absolute;
-  top: 40px;
-  left: 12px;
+  top: 42px;
+  left: 13px;
   transform: translateX(-50%);
   z-index: 1;
     box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
