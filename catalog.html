@@ -67,42 +67,72 @@
                 <legend class="h4 filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input type="checkbox" name="filter-pool" id="filter-pool" value="pool" checked>
-                    <label class="filter-label" for="filter-pool">Бассейн</label>
+                    <label class="control">
+                      <input class="control-input visually-hidden" type="checkbox" name="filter-pool"  checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
+                    </label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="filter-parking" id="filter-parking" value="parking" checked>
-                    <label class="filter-label" for="filter-parking">Парковка</label>
+                    <label class="control">
+                      <input class="control-input visually-hidden" type="checkbox" name="filter-parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
+                    </label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="filter-network" id="filter-network" value="wifi">
-                    <label class="filter-label" for="filter-network">Wi-Fi</label>
+                    <label class="control">
+                      <input class="control-input visually-hidden" type="checkbox" name="filter-network">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="filter-section">
-                <legend class="h4 filter-title">Тип жилья:</legend>
+                <legend class="h4 filter-title">Тип Жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input type="radio" name="filter-housing-type" id="filter-hotel" value="hotel" checked>
-                    <label class="filter-label" for="filter-hotel">Гостиница</label>
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="filter-housing-type" value="hotel" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
+                    </label>
                   </li>
-                  <li class="catalog-filter-item">
-                    <input type="radio" name="filter-housing-type" id="filter-motel" value="motel">
-                    <label class="filter-label" for="filter-motel">Мотель</label>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="filter-housing-type" value="motel">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
+                    </label>
                   </li>
-                  <li class="catalog-filter-item">
-                    <input type="radio" name="filter-housing-type" id="filter-apartments" value="apartments">
-                    <label class="filter-label" for="filter-apartments">Апартаменты</label>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="filter-housing-type" value="apartments">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
             </div>
             <div class="filters-right-group">
               <fieldset class="filter-section">
-                <legend class="h4 filter-title">Стоимость,₽:</legend>
-                <input type="number" class="input-value desc-4" name="minValue" id="minValue" value="0" required>
-                <input type="number" class="input-value desc-4" name="maxValue" id="maxValue" value="9000" required>
+                <legend class="h4 filter-title">Стоимость, ₽:</legend>
+                <div class="filters-control-value">
+                  <input type="number" class="input-value desc-4" name="minValue" id="minValue" value="0" min="0">
+                  <input type="number" class="input-value desc-4" name="maxValue" id="maxValue" value="9000" min="0">
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left:2px; width: 205px;">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
               </fieldset>
               <div class="filter-buttons">
                 <button class="button button-bg-add" type="submit">Применить</button>
@@ -113,7 +143,7 @@
         </header>
         <section class="catalog-cards">
           <header class="catalog-cards-intro">
-            <h2 class="catalog-cards-title h2">Найдено гостиниц : <span class="catalog-cards-value">4</span></h2>
+            <h2 class="catalog-cards-title h2">Найдено гостиниц: <span class="catalog-cards-value">38</span></h2>
             <div class="catalog-cards-filters">
               <div class="select-wrapper">
                 <select class="select-control" name="select" aria-label="Сортировка">
@@ -144,7 +174,7 @@
               <img class="card-image" src="images/hotel/Amara-Resort-&-Spa.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa" />
               <h3 class="card-title h3">Amara Resort & Spa</h3>
               <p class="card-category desc-3">Гостиница</p>
-              <p class="card-price desc-3">от <span class="card-value">4000</span>₽</p>
+              <p class="card-price desc-3">От <span class="card-value">4000</span>₽</p>
               <a class="button button-bg-base" href="#">Подробнее</a>
               <button class="button button-bg-add" type="button">В избранное</button>
               <ul class="rating-stars-list">
@@ -159,9 +189,9 @@
               <img class="card-image" src="images/hotel/Villas-at-Poco-Diablo.jpg" width="300" height="212" alt="Гостиница Villas at Poco Diablo" />
               <h3 class="card-title h3">Villas at Poco Diablo</h3>
               <p class="card-category desc-3">Гостиница</p>
-              <p class="card-price desc-3">от <span class="card-value">5000</span>₽</p>
+              <p class="card-price desc-3">От <span class="card-value">5000</span>₽</p>
               <a class="button button-bg-base" href="#">Подробнее</a>
-              <button class="button button-bg-active" type="button">В избранное</button>
+              <button class="button button-bg-active" type="button">В избранном</button>
               <ul class="rating-stars-list">
                 <li class="rating-stars-item"><img src="images/icons/star.svg" alt="Звезда"></li>
                 <li class="rating-stars-item"><img src="images/icons/star.svg" alt="Звезда"></li>
@@ -174,7 +204,7 @@
               <img class="card-image" src="images/hotel/Desert-Quail-Inn.jpg" width="300" height="212" alt="Гостиница Desert Quail Inn" />
               <h3 class="card-title h3">Desert Quail Inn</h3>
               <p class="card-category desc-3">Гостиница</p>
-              <p class="card-price desc-3">от <span class="card-cost">2500</span>₽</p>
+              <p class="card-price desc-3">От <span class="card-cost">2500</span>₽</p>
               <a class="button button-bg-base" href="#">Подробнее</a>
               <button class="button button-bg-add" type="button">В избранное</button>
               <ul class="rating-stars-list">
@@ -188,7 +218,7 @@
               <img class="card-image" src="images/hotel/GreenTree-Inn.jpg" width="300" height="212" alt="Гостиница GreenTree Inn" />
               <h3 class="card-title h3">GreenTree Inn</h3>
               <p class="card-category desc-3">Гостиница</p>
-              <p class="card-price desc-3">от <span class="card-cost">1500</span>₽</p>
+              <p class="card-price desc-3">От <span class="card-cost">1500</span>₽</p>
               <a class="button button-bg-base" href="#">Подробнее</a>
               <button class="button button-bg-add" type="button">В избранное</button>
               <ul class="rating-stars-list">
