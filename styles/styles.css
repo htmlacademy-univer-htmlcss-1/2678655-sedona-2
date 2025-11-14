@@ -22,6 +22,12 @@
   --color-border-primary: #E6E6E6;
   --color-border-focus: #83B3D3;
   --color-state-disabled: #E5E5E5;
+  --color-black-transparent-25: rgba(0, 0, 0, 0.25);
+  --color-black-transparent-30: rgba(0, 0, 0, 0.30);
+  --color-black-transparent-15: rgba(0, 0, 0, 0.15);
+  --color-black-transparent-60: rgba(0, 0, 0, 0.6);
+  --color-white-transparent-80: rgba(255, 255, 255, 0.8);
+  --color-error: #FF5757;
 }
 
 
@@ -317,9 +323,9 @@ button.button-bg-transparent:active {
   font-weight: 700;
   font-size: 10px;
   line-height: 10px;
-  color: white;
+  color: var(--color-bg-secondary);
   display: block;
-  background-color: #7DB54F;
+  background-color: var(--color-brand-accent);
   border-radius: 100%;
   right: 5px;
   top: -3px;
@@ -422,7 +428,7 @@ button.button-bg-transparent:active {
   background-color: var(--color-white-transparent-30);
 }
 .advantages-item:not(.advantages-featured) .advantages-item-title::after {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--color-black-transparent-30);
 }
 .benefits {
   text-align: center;
@@ -699,7 +705,7 @@ button.button-bg-transparent:active {
   cursor: pointer;
 }
 .range-toggle:hover {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 var(--color-black-transparent-25);
 }
 .range-toggle:focus {
   outline: 3px solid var(--color-border-focus);
@@ -860,7 +866,7 @@ button.button-bg-transparent:active {
 }
 
 .select-wrapper:has(.select-control:disabled) {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--color-black-transparent-30);
 }
 .select-control:hover {
   border: 2px solid var(--color-brand-secondary-hover);
@@ -869,9 +875,9 @@ button.button-bg-transparent:active {
   border: 2px solid var(--color-brand-secondary-hover);
 }
 .select-control:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--color-black-transparent-30);
   pointer-events: none;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--color-black-transparent-30);
 }
 .housing-display-list {
   margin: 0 0 0 70px;
@@ -1127,9 +1133,9 @@ button.button-bg-transparent:active {
   position: relative;
   margin: auto;
   padding: 64px 70px;
-  background-color: #ffffff;
+  background-color: var(--color-bg-secondary);
   border-radius: 30px;
-  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px 0 var(--color-black-transparent-15);
 }
 .modal-search{
   width: 717px;
@@ -1142,7 +1148,7 @@ button.button-bg-transparent:active {
   right: 51px;
   width: 52px;
   height: 52px;
-  background-color: #F2F2F2;
+  background-color: var(--color-bg-primary);
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -1207,7 +1213,7 @@ button.button-bg-transparent:active {
   left: 156px;
 }
 .error{
-  color: #FF5757;
+  color: var(--color-error);
 }
 .counter-field-group{
   display: flex;
@@ -1304,8 +1310,8 @@ button.button-bg-transparent:active {
   color: #AF7842;
 }
 .tooltip-text {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-secondary);
   font-size: 16px;
   line-height: 20px;
   text-transform: none;
@@ -1318,8 +1324,7 @@ button.button-bg-transparent:active {
   left: 13px;
   transform: translateX(-50%);
   z-index: 1;
-    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-
+  box-shadow: 0 25px 50px 0 var(--color-black-transparent-15);
   display: none;
   box-sizing: border-box;
 }
